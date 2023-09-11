@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>prueba js apis</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
+	<body>
+		<div class="div-out">
+			<h1>Conversor moneda nacional</h1>
+			<div class="inCont">
+				<form>
+					<h2>Pesos CLP</h2>
+					<input
+						type="text"
+						id="priceIn"
+						name="priceIn"
+						placeholder="10.000$"
+					/>
+					<br />
+					<h3>Moneda a convertir</h3>
+					<select id="coinIn" name="moneda">
+						<option value="usd" id="valueUsd">Dólar</option>
+						<option value="eur" id="valueEur">Euro</option>
+					</select>
+				</form>
+				<div>
+					<button id="btnBuscar" class="boton-buscar">Buscar</button>
+					<h3 id="totalOut">Total:</h3>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="graf-container"><div id="chart"></div></div>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
